@@ -1,3 +1,3 @@
-from .user import User
-from .project import Project, ProjectMember
-from .task import Task
+from models.user import User
+from models.project import Project, ProjectMember
+from models.task import Task

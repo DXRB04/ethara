@@ -2,11 +2,11 @@ from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from sqlalchemy import func
 from datetime import date
-from ..database import get_db
-from ..models.task import Task
-from ..models.project import Project, ProjectMember
-from ..models.user import User
-from ..middleware.auth import get_current_user
+from database import get_db
+from models.task import Task
+from models.project import Project, ProjectMember
+from models.user import User
+from middleware.auth import get_current_user
 
 router = APIRouter()
 

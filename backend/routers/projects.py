@@ -1,12 +1,12 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from typing import List
-from ..database import get_db
-from ..schemas.project import ProjectCreate, ProjectResponse, ProjectDetailResponse, ProjectMemberAdd
-from ..models.project import Project, ProjectMember
-from ..models.user import User
-from ..middleware.auth import get_current_user
-from ..services.rbac import check_project_member, check_project_admin
+from database import get_db
+from schemas.project import ProjectCreate, ProjectResponse, ProjectDetailResponse, ProjectMemberAdd
+from models.project import Project, ProjectMember
+from models.user import User
+from middleware.auth import get_current_user
+from services.rbac import check_project_member, check_project_admin
 
 router = APIRouter()
 

@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta, timezone
 from typing import Optional
 from jose import JWTError, jwt
-from ..config import settings
+from config import settings
 import bcrypt
 
 def verify_password(plain_password: str, hashed_password: str) -> bool:

@@ -1,7 +1,7 @@
 from fastapi import HTTPException, status
 from sqlalchemy.orm import Session
-from ..models.project import ProjectMember
-from ..models.user import User
+from models.project import ProjectMember
+from models.user import User
 
 def check_project_member(db: Session, project_id: int, user_id: int):
     member = db.query(ProjectMember).filter(
